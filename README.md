@@ -3,7 +3,7 @@
 To use pandoc to convert this md file to a pdf, run the following:
 
 ```
-pandoc --bibliography bibliography.bib -o test.pdf test.md  --citeproc
+pandoc --bibliography bibliography.bib -o test.pdf test.md  --citeproc --csl apa-cv.csl
 ```
 
 ## Known issues

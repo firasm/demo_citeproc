@@ -1,0 +1,178 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{natbib}
+\usepackage{bibentry}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{demo-cv}{%
+\section{Demo CV}\label{demo-cv}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu
+elit risus.
+
+\hypertarget{list-of-publications}{%
+\subsection{List of publications}\label{list-of-publications}}
+
+Here are two of my most relevant first-author papers, but I want the
+full reference here (what would appear in the References section):
+
+\begin{itemize}
+\tightlist
+\item
+  (Moosvi, Reinsberg, and Rieger 2019)
+\item
+  (Moosvi et al. 2019)
+\end{itemize}
+
+\begin{itemize}
+  \item \bibentry{Moosvi:2019fa}
+
+\end{itemize}
+
+\hypertarget{other-publications}{%
+\subsection{Other publications}\label{other-publications}}
+
+Here are two other papers, but I want the full reference here (what
+would appear in the References section):
+
+\begin{itemize}
+\tightlist
+\item
+  (Englund, Moosvi, and Roll 2021)
+\item
+  (Jennifer H. E. Baker et al. 2016)
+\end{itemize}
+
+\hypertarget{prose-with-some-in-line-references}{%
+\subsection{Prose with some in-line
+references}\label{prose-with-some-in-line-references}}
+
+Nam porta ex non pharetra luctus. Nulla pretium et augue sit amet
+tincidunt (Jennifer Hazel Elizabeth Baker et al. 2018). In non gravida
+urna(Bailey, Moosvi, and Stanisz 2014).
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+All the references used in the section ``Prose with some in-line
+references'' should appear here.
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-Bailey:2014:ma}{}}%
+Bailey, Colleen, Firas Moosvi, and Greg J. Stanisz. 2014. {``Mapping
+Water Exchange Rates in Rat Tumor Xenografts Using the Late-Stage Uptake
+Following Bolus Injections of Contrast Agent.''} \emph{Magnetic
+Resonance in Medicine} 71 (5): 1874--87.
+https://doi.org/\url{https://doi.org/10.1002/mrm.24847}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Baker:2015mu}{}}%
+Baker, Jennifer H. E., Kelly C. McPhee, Firas Moosvi, Katayoun Saatchi,
+Urs O. Häfeli, Andrew I. Minchinton, and Stefan A. Reinsberg. 2016.
+{``Multi-Modal Magnetic Resonance Imaging and Histology of Vascular
+Function in Xenografts Using Macromolecular Contrast Agent Hyperbranched
+Polyglycerol (HPG-GdF).''} \emph{Contrast Media \& Molecular Imaging} 11
+(1): 77--88. https://doi.org/\url{https://doi.org/10.1002/cmmi.1661}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Baker:2018he}{}}%
+Baker, Jennifer Hazel Elizabeth, Alastair Hugh Kyle, Stefan Alexander
+Reinsberg, Firas Moosvi, Haley Margaret Patrick, Jordan Cran, Katayoun
+Saatchi, Urs Häfeli, and Andrew Ivor Minchinton. 2018. {``Heterogeneous
+Distribution of Trastuzumab in Her2-Positive Xenografts and Metastases:
+Role of the Tumor Microenvironment.''} \emph{Clinical \& Experimental
+Metastasis} 35 (7): 691--705.
+\url{https://doi.org/10.1007/s10585-018-9929-3}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Englund:2021in}{}}%
+Englund, L., F. Moosvi, and I. Roll. 2021. {``Interface and Interaction
+Design for an Online, Asynchronous Peer Instruction Tool.''}
+\emph{Interactive Learning Environments} 0 (0): 1--21.
+\url{https://doi.org/10.1080/10494820.2021.1910849}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Moosvi:2019fa}{}}%
+Moosvi, Firas, Jennifer H. E. Baker, Andrew Yung, Piotr Kozlowski,
+Andrew I. Minchinton, and Stefan A. Reinsberg. 2019. {``Fast and
+Sensitive Dynamic Oxygen-Enhanced MRI with a Cycling Gas Challenge and
+Independent Component Analysis.''} \emph{Magnetic Resonance in Medicine}
+81 (4): 2514--25.
+https://doi.org/\url{https://doi.org/10.1002/mrm.27584}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Moosvi:2019ca}{}}%
+Moosvi, Firas, Stefan Reinsberg, and Georg Rieger. 2019. {``Can a
+Hands-on Physics Project Lab Be Delivered Effectively as a Distance
+Lab?''} \emph{International Review of Research in Open and Distance
+Learning} 20: 22--42. \url{https://doi.org/10.19173/irrodl.v20i1.3782}.
+
+\end{CSLReferences}
+
+\end{document}
